@@ -7,11 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        String[] strArr = {"we","say",":","yes","!@#$%^&*()"};
-        List<String> arr = new ArrayList<String>(Arrays.stream(strArr).toList());
-       EncodeAndDecodeSolution solution = new EncodeAndDecodeSolution();
-       String decodeString = solution.encode(arr);
-       System.out.println(decodeString);
-       System.out.println(solution.decode(decodeString));
+        int[] arr = {1,2,2,3,3,3};
+       TopKElementsSolution solution = new TopKElementsSolution();
+       System.out.println(Arrays.toString(solution.topKFrequent(arr, 2)));
     }
 }
