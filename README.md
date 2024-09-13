@@ -21,5 +21,11 @@
       -  Use 2 passes
       -  Store 2 variables to keep track of the left and right products
       -  1st pass will calculate the left products
-      -  2nd pass will calculate right products         
+      -  2nd pass will calculate right products
+     
+  * Encode and Decode Strings
+    * Keys to solving this problem:
+      - When encoding the string use the length of the current string in the array and a token to mark the location of a word
+      - When decoding you would iterate until reaching the token to get the length of the string
+      - Then retrieve the string by using the length and the current index to calculate the substring and store it in the list         
        
