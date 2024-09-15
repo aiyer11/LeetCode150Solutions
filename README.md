@@ -35,5 +35,28 @@
     * Keys to solving this problem:
       - When encoding the string use the length of the current string in the array and a token to mark the location of a word
       - When decoding you would iterate until reaching the token to get the length of the string
-      - Then retrieve the string by using the length and the current index to calculate the substring and store it in the list         
+      - Then retrieve the string by using the length and the current index to calculate the substring and store it in the list
+     
+  * IsPalindrome:
+    * Keys to solving this problem:
+      - Remove all spaces, special characters and make the string lowercase
+      - Have two pointers, one at the start and one at the end
+      - Loop until the middle of the string is reached
+      - If any of the characters don't match return false else true
+
+  * GroupedAnagrams
+    * Keys to solving this problem:
+      - Use a hashmap to keep track of the anagrams
+      - The key is a string created from a chararacter array that counts the number of characters in each String
+      - Add the values to the hashmap that match the character count key or add a new character count key to the hashmap
+
+  * Two Sum II:
+    * Keys to solving this problem:
+      - Use two pointers to start at the beginning and the end of the list
+      - Check to see if the numbers at the pointers equal the sum
+      - If they do return the pointers in a list
+      - If the sum is greater than the target sum decrease the end pointer
+      - If the sum is less than the target sum increase the start pointer
+     
+          
        
