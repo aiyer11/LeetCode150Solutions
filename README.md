@@ -1,4 +1,4 @@
-# LeetCode 150 Day Challenge
+# LeetCode 150 Problem Challenge
 
 ## I have challenged myself to solve 1 leetcode problem a day for 150 days. These are the problems I have solved so far:
  * Longest Consecutive Sequence
@@ -22,6 +22,14 @@
       -  Store 2 variables to keep track of the left and right products
       -  1st pass will calculate the left products
       -  2nd pass will calculate right products
+     
+  * Top K Frequent Elements:
+    * Keys to solving this problem:
+      - Use a hashmap to count the number of ocurrances of each number in the array
+      - Use a list of lists to keep track of how many numbers occur a certain number of times
+        - Index is the number of times a number occurs
+        - For example in index 1, there will be a list of numbers that occur one time in the list
+     -  Finally start from the end of the list of lists and add the most frequent elements to the results lists until k is reached      
      
   * Encode and Decode Strings
     * Keys to solving this problem:
