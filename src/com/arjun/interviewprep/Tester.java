@@ -7,8 +7,9 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        int[] arr = {1,2,2,3,3,3};
-       TopKElementsSolution solution = new TopKElementsSolution();
-       System.out.println(Arrays.toString(solution.topKFrequent(arr, 2)));
+        TwoSumIISolution solution = new TwoSumIISolution();
+        int[] nums = {1,2,3,4};
+        int target = 3;
+        System.out.println(Arrays.toString(solution.twoSumII(nums, target)));
     }
 }
