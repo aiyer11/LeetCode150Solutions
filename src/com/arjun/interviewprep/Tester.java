@@ -7,9 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        TwoSumIISolution solution = new TwoSumIISolution();
-        int[] nums = {1,2,3,4};
-        int target = 3;
-        System.out.println(Arrays.toString(solution.twoSumII(nums, target)));
+        ThreeSumSolution solution = new ThreeSumSolution();
+        int[] nums = {-1,0,1,2,-1,-4,-2,-3,3,0,4};
+        System.out.println(solution.threeSum(nums));
     }
 }
