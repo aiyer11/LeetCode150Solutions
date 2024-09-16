@@ -7,8 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        ThreeSumSolution solution = new ThreeSumSolution();
-        int[] nums = {-1,0,1,2,-1,-4,-2,-3,3,0,4};
-        System.out.println(solution.threeSum(nums));
+        MaxWaterContainerSolution solution = new MaxWaterContainerSolution();
+        int[] nums = {1,7,2,5,4,7,3,6};
+        System.out.println(solution.maxArea(nums));
     }
 }
