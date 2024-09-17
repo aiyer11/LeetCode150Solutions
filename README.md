@@ -29,7 +29,7 @@
       - Use a list of lists to keep track of how many numbers occur a certain number of times
         - Index is the number of times a number occurs
         - For example in index 1, there will be a list of numbers that occur one time in the list
-     -  Finally start from the end of the list of lists and add the most frequent elements to the results lists until k is reached      
+      -  Finally start from the end of the list of lists and add the most frequent elements to the results lists until k is reached      
      
   * Encode and Decode Strings:
     * Keys to solving this problem:
