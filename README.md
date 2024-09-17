@@ -76,6 +76,17 @@
       - The current area is the difference between the right and left pointers multiplied by the minimum height
       - If the current area is greater than the max area, set the current as the max
       - If the height is greater at the left pointer decrement the right pointer
-      - If the height is greater at the right pointer increment the left pointer      
+      - If the height is greater at the right pointer increment the left pointer
+     
+  * Trapping Rain Water
+    * Keys to solving this problem
+      - Use two pointers at the start and end of the list
+      - Keep track of the max left and max right values (start at the location of left and right pointers)
+      - If the max left is less than the max right increment the left pointer
+      - Take the max of the max left and current left and set it as the max left
+      - Calculate the amount of water that can be filled at the current location by taking the min of the maxleft and max right and subtract it from the height array at the left position
+      - If the max right is less than the max left decrement the right pointer
+      - Take the max of the max right and current right and set it as the max right
+      - Calculate the amount of water that can be filled at the current location by taking the min of the maxleft and max right and subtract it from the height array at the right   position       
           
        
