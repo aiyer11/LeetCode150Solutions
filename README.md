@@ -1,7 +1,7 @@
 # LeetCode 150 Problem Challenge
 
 ## I have challenged myself to solve 1 leetcode problem a day for 150 days. These are the problems I have solved so far:
- * Longest Consecutive Sequence
+ * Longest Consecutive Sequence:
    * Keys to solving this problem:
      - Using a set to store the array in sequential order
      - Checking if the current value is the start of a sequence by looking for a value to it's left
@@ -31,7 +31,7 @@
         - For example in index 1, there will be a list of numbers that occur one time in the list
      -  Finally start from the end of the list of lists and add the most frequent elements to the results lists until k is reached      
      
-  * Encode and Decode Strings
+  * Encode and Decode Strings:
     * Keys to solving this problem:
       - When encoding the string use the length of the current string in the array and a token to mark the location of a word
       - When decoding you would iterate until reaching the token to get the length of the string
@@ -44,7 +44,7 @@
       - Loop until the middle of the string is reached
       - If any of the characters don't match return false else true
 
-  * GroupedAnagrams
+  * GroupedAnagrams:
     * Keys to solving this problem:
       - Use a hashmap to keep track of the anagrams
       - The key is a string created from a chararacter array that counts the number of characters in each String
@@ -57,6 +57,25 @@
       - If they do return the pointers in a list
       - If the sum is greater than the target sum decrease the end pointer
       - If the sum is less than the target sum increase the start pointer
+
+  * Three Sum:
+    * Keys to solving this problem:
+      - Sort the input array
+      - Loop through the sorted input array
+      - Check to see if the previous element is equal to the current element and if so continue the loop
+      - Use two pointers to keep track of the current position + 1 and the end of the list
+      - Loop until the left pointer is greater than the right pointer and check to see if the sum of the left, right and current position is equal to zero
+      - If so add the 3 values to the list
+      - If not if the sum is greater than the target decrease the right pointer
+      - If the sum is less than the target increase the left pointer
+      - If the next position is the same as the previous position keep increasing the left pointer until a unique value is reached
      
+  * Max Water Container:
+    * Keys to solving this problem
+    * Use two pointers one at the beginning of the list and one at the end
+    * The current area is the difference between the right and left pointers multiplied by the minimum height
+    * If the current area is greater than the max area, set the current as the max
+    * If the height is greater at the left pointer decrement the right pointer
+    * If the height is greater at the right pointer increment the left pointer      
           
        
