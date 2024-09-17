@@ -87,6 +87,14 @@
       - Calculate the amount of water that can be filled at the current location by taking the min of the maxleft and max right and subtract it from the height array at the left position
       - If the max right is less than the max left decrement the right pointer
       - Take the max of the max right and current right and set it as the max right
-      - Calculate the amount of water that can be filled at the current location by taking the min of the maxleft and max right and subtract it from the height array at the right   position       
+      - Calculate the amount of water that can be filled at the current location by taking the min of the maxleft and max right and subtract it from the height array at the right position
+
+  * Buy and Sell Stocks:
+    * Keys to solving this problem:
+      - Use two pointers to keep track of the buying and selling price
+        - The buying price starts at the first element in the input array
+        - The selling price is set to the current element in the loop which starts at index 1
+      - If the buying price is less than the selling price then calculate the profit and if the profit is greater than the max profit set the max profit to the current profit
+      - Otherwise, set the buying price to the selling price
           
        
