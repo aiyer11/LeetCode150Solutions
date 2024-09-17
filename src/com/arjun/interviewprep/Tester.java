@@ -7,8 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        MaxWaterContainerSolution solution = new MaxWaterContainerSolution();
-        int[] nums = {1,7,2,5,4,7,3,6};
-        System.out.println(solution.maxArea(nums));
+        BuyAndSellSolution buyAndSellSolution = new BuyAndSellSolution();
+        int[] nums = {5,1,5,6,7,1,10};
+        System.out.println(buyAndSellSolution.maxProfit(nums));
     }
 }
