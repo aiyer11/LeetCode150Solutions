@@ -72,10 +72,10 @@
      
   * Max Water Container:
     * Keys to solving this problem
-    * Use two pointers one at the beginning of the list and one at the end
-    * The current area is the difference between the right and left pointers multiplied by the minimum height
-    * If the current area is greater than the max area, set the current as the max
-    * If the height is greater at the left pointer decrement the right pointer
-    * If the height is greater at the right pointer increment the left pointer      
+      - Use two pointers one at the beginning of the list and one at the end
+      - The current area is the difference between the right and left pointers multiplied by the minimum height
+      - If the current area is greater than the max area, set the current as the max
+      - If the height is greater at the left pointer decrement the right pointer
+      - If the height is greater at the right pointer increment the left pointer      
           
        
