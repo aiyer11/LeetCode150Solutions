@@ -78,7 +78,7 @@
       - If the height is greater at the left pointer decrement the right pointer
       - If the height is greater at the right pointer increment the left pointer
      
-  * Trapping Rain Water
+  * Trapping Rain Water:
     * Keys to solving this problem
       - Use two pointers at the start and end of the list
       - Keep track of the max left and max right values (start at the location of left and right pointers)
