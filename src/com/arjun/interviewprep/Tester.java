@@ -7,8 +7,9 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        BuyAndSellSolution buyAndSellSolution = new BuyAndSellSolution();
-        int[] nums = {5,1,5,6,7,1,10};
-        System.out.println(buyAndSellSolution.maxProfit(nums));
+       LongestRepeatingSolution solution = new LongestRepeatingSolution();
+        //int[] nums = {5,1,5,6,7,1,10};
+        String s = "AABABBA";
+        System.out.println(solution.characterReplacement(s,1));
     }
 }

@@ -96,5 +96,21 @@
         - The selling price is set to the current element in the loop which starts at index 1
       - If the buying price is less than the selling price then calculate the profit and if the profit is greater than the max profit set the max profit to the current profit
       - Otherwise, set the buying price to the selling price
+
+  * Longest Substring Solution:
+    * Keys to solving this problem:
+      - Use a set to keep track of the characters in the string
+      - Use two pointers to keep track of the start and end of the substring
+      - If the character at the end pointer is not in the set add it to the set and increment the end pointer
+      - If the character at the end pointer is in the set remove the character at the start pointer from the set and increment the start pointer
+      - Keep track of the max length of the substring by taking the max of the current length and the max length
           
-       
+  * Longest Repeating Substring With Replacements Solution:
+    * Keys to solving this problem:
+      - Use a hashmap to keep track of the character counts
+      - Use two pointers to keep track of the start and end of the substring
+      - Keep track of the max length of the substring
+      - If the character at the end pointer is not in the hashmap add it to the hashmap and increment the end pointer
+      - Set the max occurring character to the max of the current character and the max occurring character
+      - If the length of the substring minus the max occurring character is greater than k then remove the character at the start pointer from the hashmap and increment the start pointer
+      - Keep track of the max length of the substring by taking the max of the current window and the max length
