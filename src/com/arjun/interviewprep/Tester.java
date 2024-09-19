@@ -7,9 +7,11 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-       LongestRepeatingSolution solution = new LongestRepeatingSolution();
+        PermutationStringSolution solution = new PermutationStringSolution();
         //int[] nums = {5,1,5,6,7,1,10};
-        String s = "AABABBA";
-        System.out.println(solution.characterReplacement(s,1));
+        String s1 = "abc";
+        String s2 ="lecaabee";
+
+        System.out.println(solution.checkInclusion(s1,s2));
     }
 }
