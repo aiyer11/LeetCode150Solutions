@@ -97,7 +97,7 @@
       - If the buying price is less than the selling price then calculate the profit and if the profit is greater than the max profit set the max profit to the current profit
       - Otherwise, set the buying price to the selling price
 
-  * Longest Substring Solution:
+  * Longest Substring:
     * Keys to solving this problem:
       - Use a set to keep track of the characters in the string
       - Use two pointers to keep track of the start and end of the substring
@@ -105,7 +105,7 @@
       - If the character at the end pointer is in the set remove the character at the start pointer from the set and increment the start pointer
       - Keep track of the max length of the substring by taking the max of the current length and the max length
           
-  * Longest Repeating Substring With Replacements Solution:
+  * Longest Repeating Substring With Replacements:
     * Keys to solving this problem:
       - Use a hashmap to keep track of the character counts
       - Use two pointers to keep track of the start and end of the substring
@@ -114,3 +114,29 @@
       - Set the max occurring character to the max of the current character and the max occurring character
       - If the length of the substring minus the max occurring character is greater than k then remove the character at the start pointer from the hashmap and increment the start pointer
       - Keep track of the max length of the substring by taking the max of the current window and the max length
+
+  * Permutation String:
+    * Keys to solving this problem:
+      - Count the number of characters in the substring t and the string s until the end of the substring
+      - Use two pointers to keep track of the start and end of the substring
+      - Keep track of the number of matches
+      - Check to see if the counts of the substrings match the counts of the string and increment the matches counter
+      - Loop through the string and check to see if the matches == 26 and if so return true
+      - Keep track of the start of the substring
+      - Get the ascii value of the current character and increment the count in the string count array
+      - If the current character count in the substring is equal to the count in the string count array then increment the matches counter
+      - If the character after the current character count is equal to the count in the string count array then decrement the matches counter
+      - Get the ascii value of the character at the start pointer and decrement the count in the string count array
+      - If the count of the character at the start pointer is equal to the count in the substring count array then increment the matches counter
+      - If the character before the start character in the substring is equal to the count in the string count array then decrement the matches counter
+      - Increment the start pointer
+
+  * Minimum Window:
+    * Keys to solving this problem:
+      - Use two hashmaps: one to keep track of the character counts for the substring t and one to keep track of the character counts of the current window
+      - Keep track of how many character matches are needed, how many there are currently, the minimum length of the substring and the start of the window
+      - If the character at the end pointer is in the hashmap add it to the current window hashmap and increment the count of the character
+      - If the count of the character in the current window is equal to the count of the character in the substring t then increment the character matches we have
+      - If the character matches we have is equal to the number of matches we need then we need to get the length of the substring
+        - If the length is less than the current minimum we replace the minimum and store the current substring
+        - If the character at the start pointer is in the hashmap then decrement the count of the character in the current window and if the count is less than the count in the substring t then decrement the character matches we have

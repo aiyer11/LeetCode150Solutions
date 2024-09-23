@@ -7,11 +7,11 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        PermutationStringSolution solution = new PermutationStringSolution();
+        MinimumWindowSolution solution = new MinimumWindowSolution();
         //int[] nums = {5,1,5,6,7,1,10};
-        String s1 = "abc";
-        String s2 ="lecaabee";
+        String s1 = "OUZODYXAZV";
+        String s2 ="XYZ";
 
-        System.out.println(solution.checkInclusion(s1,s2));
+        System.out.println(solution.minWindow(s1,s2));
     }
 }
