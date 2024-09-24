@@ -140,3 +140,14 @@
       - If the character matches we have is equal to the number of matches we need then we need to get the length of the substring
         - If the length is less than the current minimum we replace the minimum and store the current substring
         - If the character at the start pointer is in the hashmap then decrement the count of the character in the current window and if the count is less than the count in the substring t then decrement the character matches we have
+
+  * Maximum Sliding Window:
+    * Keys to solving this problem:
+      - Use a deque to keep track of the maximum values in the current window
+      - Keep track of the start and the end pointers
+      - Check to see if the current value is greater than the last value in the deque and if so remove the last value
+      - Add the current index to the deque
+      - Check to see if the starting index is out of bounds of the current window and if so remove the starting index from the deque
+      - If the current window is equal to k add the value at the first index in the deque to the results list at the start index
+        - Increment the start index
+      - Increment the end index 

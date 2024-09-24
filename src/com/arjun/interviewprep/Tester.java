@@ -7,11 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        MinimumWindowSolution solution = new MinimumWindowSolution();
-        //int[] nums = {5,1,5,6,7,1,10};
-        String s1 = "OUZODYXAZV";
-        String s2 ="XYZ";
-
-        System.out.println(solution.minWindow(s1,s2));
+        MaxSlidingWindowSolution solution = new MaxSlidingWindowSolution();
+        int[] nums = {1,2,1,0,4,2,6};
+        System.out.println(Arrays.toString(solution.maxSlidingWindow(nums, 3)));
     }
 }
