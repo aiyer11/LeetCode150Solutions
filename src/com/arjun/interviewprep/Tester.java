@@ -7,8 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        MaxSlidingWindowSolution solution = new MaxSlidingWindowSolution();
+       ValidParenthesesSolution solution = new ValidParenthesesSolution();
         int[] nums = {1,2,1,0,4,2,6};
-        System.out.println(Arrays.toString(solution.maxSlidingWindow(nums, 3)));
+        System.out.println(solution.isValid("}}"));
     }
 }

@@ -151,3 +151,11 @@
       - If the current window is equal to k add the value at the first index in the deque to the results list at the start index
         - Increment the start index
       - Increment the end index 
+
+  * Valid Parentheses: 
+    * Keys to solving this problem:
+      - Use a stack to keep track of the opening brackets
+      - Use a hashmap to store the closing brackets to opening bracket mappings
+      - Check to see if the stack is not empty, the current character is a closing bracket and the top of the stack is the opening bracket for the current character
+        - If so pop the opening bracket from the stack
+        - Else add the character to the stack
