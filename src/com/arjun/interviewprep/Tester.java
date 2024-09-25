@@ -7,13 +7,8 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-      MinStack minStack = new MinStack();
-      minStack.push(1);
-      minStack.push(2);
-      minStack.push(0);
-      System.out.println(minStack.getMin());
-      minStack.pop();
-      minStack.top();
-      System.out.println(minStack.getMin());
+      EvaluateRPNSolution solution = new EvaluateRPNSolution();
+      String[] tokens = {"4","13","5","/","+"};
+      System.out.println(solution.evalRPN(tokens));
     }
 }

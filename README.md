@@ -167,3 +167,10 @@
         - If so push the value to the min stack  
       - When popping remove the value from the min stack and the actual stack
       - When getting the minimum value return the top of the min stack 
+
+  * Evaluate RPN:
+    * Keys to solving this problem:
+      - Use a stack to keep track of the result
+      - When encountering an operation token perform the operation on the top 2 values of the stack and push that result back into the stack
+      - When encountering a number push it into the stack
+      - Return the top of the stack
