@@ -159,3 +159,11 @@
       - Check to see if the stack is not empty, the current character is a closing bracket and the top of the stack is the opening bracket for the current character
         - If so pop the opening bracket from the stack
         - Else add the character to the stack
+
+  * Min Stack:
+    * Keys to solving this problem:
+      - Use a stack to keep track of the minimum value
+      - When pushing check to see if the value being pushed is less than the current top of the min stack
+        - If so push the value to the min stack  
+      - When popping remove the value from the min stack and the actual stack
+      - When getting the minimum value return the top of the min stack 
