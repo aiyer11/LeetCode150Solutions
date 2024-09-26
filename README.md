@@ -174,3 +174,11 @@
       - When encountering an operation token perform the operation on the top 2 values of the stack and push that result back into the stack
       - When encountering a number push it into the stack
       - Return the top of the stack
+
+  * Generate Parentheses:
+    * Keys to solving this problem:
+      - Use a recursive function to generate the parentheses
+      - Keep track of the number of open and close brackets
+      - If the number of open brackets is equal to the number of close brackets and the number of close brackets is equal to n then add the current string to the results list
+      - If the number of open brackets is less than n then add an open bracket and call the function again incrementing the open count
+      - If the number of close brackets is less than the number of open brackets then add a close bracket and call the function again incrementing the close count
