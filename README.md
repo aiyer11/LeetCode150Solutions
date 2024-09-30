@@ -182,3 +182,10 @@
       - If the number of open brackets is equal to the number of close brackets and the number of close brackets is equal to n then add the current string to the results list
       - If the number of open brackets is less than n then add an open bracket and call the function again incrementing the open count
       - If the number of close brackets is less than the number of open brackets then add a close bracket and call the function again incrementing the close count
+
+  * Daily Temperatures:
+    * Keys to solving this problem: 
+      - Use a stack of int arrays to keep track of the current temperature and the index it is located at
+      - Check to see if the stack is not empty and if the current element is greater than the top of the stack
+        - If the conditions are met, pop the top of the stack and set the result array to the difference between the current index and the index the element is located at
+      - Push the current element and its index into the stack
