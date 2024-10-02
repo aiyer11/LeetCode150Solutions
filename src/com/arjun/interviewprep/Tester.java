@@ -7,8 +7,9 @@ import java.util.List;
 public class Tester {
     public static void main(String[] args){
 
-        DailyTemperaturesSolution solution = new DailyTemperaturesSolution();
-        int[] temperatures = {30,38,30,36,35,40,28};
-        System.out.println(Arrays.toString(solution.dailyTemperatures(temperatures)));
+        CarFleetSolution carFleetSolution = new CarFleetSolution();
+        int[] position = {6,8};
+        int[] speed = {3,2};
+        System.out.println(carFleetSolution.carFleet(10,position,speed));
     }
 }

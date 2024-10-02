@@ -189,3 +189,11 @@
       - Check to see if the stack is not empty and if the current element is greater than the top of the stack
         - If the conditions are met, pop the top of the stack and set the result array to the difference between the current index and the index the element is located at
       - Push the current element and its index into the stack
+
+  * Car Fleet:
+    * Keys to solving this problem:
+      - Sort the position and speed arrays by position and store in a 2d array (pos,speed)
+      - Loop through the 2d array starting from the end
+      - Use a stack to keep track of the car fleets
+      - Calculate the time it takes to reach the target position (target - pos[i])/speed[i]
+      - If the time is greater than the top car in the stack then add the car to the fleet
