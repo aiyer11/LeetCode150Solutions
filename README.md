@@ -197,3 +197,16 @@
       - Use a stack to keep track of the car fleets
       - Calculate the time it takes to reach the target position (target - pos[i])/speed[i]
       - If the time is greater than the top car in the stack then add the car to the fleet
+
+  * Largest Rectangle:
+    * Keys to solving this problem:
+      * Use a stack to keep track of pairs of indexes and heights
+      * Loop through the heights array
+      * If the stack is empty or the current height is greater than the top of the stack push the current index and height into the stack
+      * If the current height is less than the top of the stack then pop the top of the stack and calculate the area
+        * The area is the height of the top of the stack multiplied by the difference between the current index and the index at the top of the stack
+        * If the area is greater than the max area then set the max area to the current area
+        * Set the current index to the index of the element that was popped from the stack
+      * If the stack is not empty then calculate the area of the remaining elements in the stack
+        * The area is the height of current element multiplied by the difference between the length of the height array and the index of the current element
+        * If the area is greater than the max area then set the max area to the current area

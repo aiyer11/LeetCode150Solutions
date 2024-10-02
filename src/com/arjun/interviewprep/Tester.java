@@ -1,13 +1,13 @@
 package com.arjun.interviewprep;
 
 import com.arjun.interviewprep.Stack.CarFleetSolution;
+import com.arjun.interviewprep.Stack.LargestRectangleSolution;
 
 public class Tester {
     public static void main(String[] args){
 
-        CarFleetSolution carFleetSolution = new CarFleetSolution();
-        int[] position = {6,8};
-        int[] speed = {3,2};
-        System.out.println(carFleetSolution.carFleet(10,position,speed));
+        LargestRectangleSolution solution = new LargestRectangleSolution();
+        int[] heights = {7,1,7,2,2,4};
+        System.out.println(solution.largestRectangleArea(heights));
     }
 }
