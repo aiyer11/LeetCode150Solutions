@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.ArraysAndHashing;
 
 import java.util.HashMap;
 import java.util.HashSet;

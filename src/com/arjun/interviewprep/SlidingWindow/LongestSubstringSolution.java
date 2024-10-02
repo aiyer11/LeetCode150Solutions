@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.SlidingWindow;
 
 import java.util.HashSet;
 import java.util.Set;

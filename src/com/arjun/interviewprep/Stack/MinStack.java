@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.Stack;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.TwoPointers;
 
 public class TrappingRainWaterSolution {
     public int trap(int[] height) {

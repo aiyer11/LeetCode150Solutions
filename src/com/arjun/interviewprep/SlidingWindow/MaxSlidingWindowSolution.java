@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.SlidingWindow;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

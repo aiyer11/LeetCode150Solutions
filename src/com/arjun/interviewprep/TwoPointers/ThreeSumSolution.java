@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.TwoPointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;

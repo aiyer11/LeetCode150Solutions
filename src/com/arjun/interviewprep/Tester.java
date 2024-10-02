@@ -1,8 +1,6 @@
 package com.arjun.interviewprep;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import com.arjun.interviewprep.Stack.CarFleetSolution;
 
 public class Tester {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package com.arjun.interviewprep;
+package com.arjun.interviewprep.SlidingWindow;
 
 public class BuyAndSellSolution {
     public int maxProfit(int[] prices) {
