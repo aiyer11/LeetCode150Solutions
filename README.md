@@ -210,3 +210,13 @@
       * If the stack is not empty then calculate the area of the remaining elements in the stack
         * The area is the height of current element multiplied by the difference between the length of the height array and the index of the current element
         * If the area is greater than the max area then set the max area to the current area
+
+  * Binary Search:
+    * Keys to solving this problem:
+      * Use two pointers to keep track of the start and end of the array
+      * Keep track of the middle index of the array
+      * If the middle index is equal to the target return the middle index
+      * If the middle index is less than the target decrement the end pointer
+      * If the middle index is greater than the target increment the start pointer
+      * Set the middle to the start + end divided by 2
+      * Loop until the start is less than or equal to the end and return -1 if the target is not found
