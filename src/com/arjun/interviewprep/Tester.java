@@ -1,14 +1,12 @@
 package com.arjun.interviewprep;
 
-import com.arjun.interviewprep.BinarySearch.BinarySearchSolution;
-import com.arjun.interviewprep.Stack.CarFleetSolution;
-import com.arjun.interviewprep.Stack.LargestRectangleSolution;
+import com.arjun.interviewprep.BinarySearch.Search2DMatrixSolution;
 
 public class Tester {
     public static void main(String[] args){
 
-        BinarySearchSolution solution = new BinarySearchSolution();
-        int[] heights = {5};
-        System.out.println(solution.search(heights,5));
+        Search2DMatrixSolution solution = new Search2DMatrixSolution();
+        int[][] matrix = {{1,1}};
+        System.out.println(solution.searchMatrix(matrix,2));
     }
 }

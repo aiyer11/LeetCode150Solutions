@@ -200,23 +200,31 @@
 
   * Largest Rectangle:
     * Keys to solving this problem:
-      * Use a stack to keep track of pairs of indexes and heights
-      * Loop through the heights array
-      * If the stack is empty or the current height is greater than the top of the stack push the current index and height into the stack
-      * If the current height is less than the top of the stack then pop the top of the stack and calculate the area
-        * The area is the height of the top of the stack multiplied by the difference between the current index and the index at the top of the stack
-        * If the area is greater than the max area then set the max area to the current area
-        * Set the current index to the index of the element that was popped from the stack
-      * If the stack is not empty then calculate the area of the remaining elements in the stack
-        * The area is the height of current element multiplied by the difference between the length of the height array and the index of the current element
-        * If the area is greater than the max area then set the max area to the current area
+      - Use a stack to keep track of pairs of indexes and heights
+      - Loop through the heights array
+      - If the stack is empty or the current height is greater than the top of the stack push the current index and height into the stack
+      - If the current height is less than the top of the stack then pop the top of the stack and calculate the area
+        - The area is the height of the top of the stack multiplied by the difference between the current index and the index at the top of the stack
+        - If the area is greater than the max area then set the max area to the current area
+        - Set the current index to the index of the element that was popped from the stack
+      - If the stack is not empty then calculate the area of the remaining elements in the stack
+        - The area is the height of current element multiplied by the difference between the length of the height array and the index of the current element
+        - If the area is greater than the max area then set the max area to the current area
 
   * Binary Search:
     * Keys to solving this problem:
-      * Use two pointers to keep track of the start and end of the array
-      * Keep track of the middle index of the array
-      * If the middle index is equal to the target return the middle index
-      * If the middle index is less than the target decrement the end pointer
-      * If the middle index is greater than the target increment the start pointer
-      * Set the middle to the start + end divided by 2
-      * Loop until the start is less than or equal to the end and return -1 if the target is not found
+      - Use two pointers to keep track of the start and end of the array
+      - Keep track of the middle index of the array
+      - If the middle index is equal to the target return the middle index
+      - If the middle index is less than the target decrement the end pointer
+      - If the middle index is greater than the target increment the start pointer
+      - Set the middle to the start + end divided by 2
+      - Loop until the start is less than or equal to the end and return -1 if the target is not found
+
+  * Search 2D Matrix:
+    * Keys to solving this problem:
+      - Use two pointers to keep track of the top and bottom rows
+      - Use a binary search to find the row that the target is located in
+      - If the target is not in any row return false
+      - Use two pointers to keep track of the start and end of the row
+      - If the target exists in a row use a second binary search to find the target in the row
