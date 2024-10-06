@@ -240,3 +240,10 @@
         - Set the minK to k
       - If the number of hours is greater than h
         - Set the left to k + 1
+
+ * Min In Rotated Array:
+   * Keys to solving this problem:
+     - Use a binary search
+     - If the left element is less than or equal to the right element (sorted in ascending order) return the left element
+     - If the middle element is greater than or equal to the left element search the right side of the array
+     - Else search the left side of the array
