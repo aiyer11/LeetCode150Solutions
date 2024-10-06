@@ -228,3 +228,15 @@
       - If the target is not in any row return false
       - Use two pointers to keep track of the start and end of the row
       - If the target exists in a row use a second binary search to find the target in the row
+
+  * Kokos Bananas:
+    * Keys to solving this problem:
+      - Obtain the max of the piles array
+      - The left index is 1 and the right index is the max of the piles array
+      - Use binary search and get the potential k value by adding left + right and dividing by
+      - Use the k value to calculate the number of hours it will take to eat all the bananas (round up)
+      - If the number of hours is less than or equal to h
+        - Set the right to k - 1
+        - Set the minK to k
+      - If the number of hours is greater than h
+        - Set the left to k + 1
