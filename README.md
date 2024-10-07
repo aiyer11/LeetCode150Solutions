@@ -247,3 +247,14 @@
      - If the left element is less than or equal to the right element (sorted in ascending order) return the left element
      - If the middle element is greater than or equal to the left element search the right side of the array
      - Else search the left side of the array
+
+  * Search in Rotated Array
+    * Keys to solving this problem:
+      - Use a binary search
+      - If the middle element is equal to the target return the middle
+      - If the middle element is greater than or equal to the left element (left portion of the binary search)
+        - If the target is less than the left element or greater than the middle search the right side of the array
+        - Else search the left side of the array
+      - If the middle element is less than or equal to the right element (right portion of the binary search)
+        - If the target is greater than the right element or less than the middle search the left side of the array
+        - Else search the right side of the array
