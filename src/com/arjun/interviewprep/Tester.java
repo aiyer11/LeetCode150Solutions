@@ -1,12 +1,14 @@
 package com.arjun.interviewprep;
 
 import com.arjun.interviewprep.BinarySearch.SearchInRotatedArraySolution;
+import com.arjun.interviewprep.BinarySearch.TimeMap;
 
 public class Tester {
     public static void main(String[] args){
-
-       SearchInRotatedArraySolution solution = new SearchInRotatedArraySolution();
-        int[] piles = {4,5,6,7,0,1,2};
-        System.out.println(solution.search(piles,0));
+        TimeMap timeMap = new TimeMap();
+        timeMap.set("check", "one", 5);
+        timeMap.set("check", "two", 10);
+        System.out.println(timeMap.get("check", 7));
+        System.out.println(timeMap.get("nonexistent", 7));
     }
 }

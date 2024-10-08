@@ -47,7 +47,7 @@
   * GroupedAnagrams:
     * Keys to solving this problem:
       - Use a hashmap to keep track of the anagrams
-      - The key is a string created from a chararacter array that counts the number of characters in each String
+      - The key is a string created from a character array that counts the number of characters in each String
       - Add the values to the hashmap that match the character count key or add a new character count key to the hashmap
 
   * Two Sum II:
@@ -258,3 +258,8 @@
       - If the middle element is less than or equal to the right element (right portion of the binary search)
         - If the target is greater than the right element or less than the middle search the left side of the array
         - Else search the right side of the array
+
+    * TimeMap Solution
+      * Keys to solving this problem:
+        * Use a hashmap to store the key and the value + timestamp
+        * Use a binary search to find the closest timestamp to the target timestamp
