@@ -262,4 +262,14 @@
     * TimeMap Solution
       * Keys to solving this problem:
         * Use a hashmap to store the key and the value + timestamp
-        * Use a binary search to find the closest timestamp to the target timestamp
+        * Use a binary search to find the closest timestamp to the target timestamp 
+    
+    * Median Of Two Sorted Arrays:
+      * Keys to solving this problem:
+        * Have 2 arrays to keep track of the left partitions of each array
+        * Use binary search to determine the left and right partitions of both arrays
+        * Get the left element at the midpoint-1 of array and the left element at half - middle - 1 of B
+        * Get the right element at midpoint of A and half - middle of B
+        * If the left element of A is less than the right element of B and the left element of B is less than the right element of A then return the median
+        * If the left element of A is greater than the right element of B then move the right pointer to the left
+        * If the left element of B is greater than the right element of A then move the left pointer to the right
