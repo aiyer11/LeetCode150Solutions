@@ -282,3 +282,17 @@
         - Set the current next to the previous node
         - Set the previous node to the current node
         - Set the current node to the next node
+      
+    * Merge Two Sorted Linked Lists
+      * Keys to solving this problem
+        - Use a dummy node to keep track of the result linked list
+        - Use a pointer to iterate through both linked lists
+        - If the value at list 1 is less than the value at list 2
+          - Set the pointer's next to list1
+          - Move to the next value in list1
+        - Otherwise
+          - Set the pointers next to list2
+          - Move to the next value in list2
+        - Move the pointer
+        - Once the end of the loop is reached check to see if there are any remaining nodes in list1 or list2 and add those nodes to the result linked list
+  
