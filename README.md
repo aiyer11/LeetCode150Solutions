@@ -295,4 +295,10 @@
           - Move to the next value in list2
         - Move the pointer
         - Once the end of the loop is reached check to see if there are any remaining nodes in list1 or list2 and add those nodes to the result linked list
+    
+    * Reorder Linked List
+      * Keys to solving this problem:
+        * Use a fast and slow pointer to get to the second half of the list
+        * Separate the nodes in the second half of the list
+        * Merge each node in the first half with one from the second half of the list
   
