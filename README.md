@@ -248,7 +248,7 @@
      - If the middle element is greater than or equal to the left element search the right side of the array
      - Else search the left side of the array
 
-  * Search in Rotated Array
+  * Search in Rotated Array:
     * Keys to solving this problem:
       - Use a binary search
       - If the middle element is equal to the target return the middle
@@ -259,7 +259,7 @@
         - If the target is greater than the right element or less than the middle search the left side of the array
         - Else search the right side of the array
 
-    * TimeMap Solution
+    * TimeMap Solution:
       * Keys to solving this problem:
         - Use a hashmap to store the key and the value + timestamp
         - Use a binary search to find the closest timestamp to the target timestamp 
@@ -283,8 +283,8 @@
         - Set the previous node to the current node
         - Set the current node to the next node
       
-    * Merge Two Sorted Linked Lists
-      * Keys to solving this problem
+    * Merge Two Sorted Linked Lists:
+      * Keys to solving this problem:
         - Use a dummy node to keep track of the result linked list
         - Use a pointer to iterate through both linked lists
         - If the value at list 1 is less than the value at list 2
@@ -296,9 +296,17 @@
         - Move the pointer
         - Once the end of the loop is reached check to see if there are any remaining nodes in list1 or list2 and add those nodes to the result linked list
     
-    * Reorder Linked List
+    * Reorder Linked List:
       * Keys to solving this problem:
-        * Use a fast and slow pointer to get to the second half of the list
-        * Separate the nodes in the second half of the list
-        * Merge each node in the first half with one from the second half of the list
+        - Use a fast and slow pointer to get to the second half of the list
+        - Separate the nodes in the second half of the list
+        - Merge each node in the first half with one from the second half of the list
+
+    * Remove Nth Node List:
+      * Keys to solving this problem:
+        - Use a dummy node to store the linked list with an extra node at the beginning
+        - Use two pointers to keep track of the right and left of the node to be removed
+        - Loop until the right pointer reaches the node that needs to be removed
+        - Loop until the left pointer reaches the node before the node that needs to be rmoved and the right pointer reaches the end of the list
+        - Set the left pointer to the next of its next
   
