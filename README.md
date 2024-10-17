@@ -309,4 +309,11 @@
         - Loop until the right pointer reaches the node that needs to be removed
         - Loop until the left pointer reaches the node before the node that needs to be rmoved and the right pointer reaches the end of the list
         - Set the left pointer to the next of its next
+
+    * Linked List Cycle Detection:
+      * Keys to solving this problem:
+        * Use 2 pointers one fast and one slow
+        * Check to see if the fast pointer equals the slow pointer and if so return true (cycle detected)
+        * Move the slow pointer 1 node
+        * Move the fast pointer 2 nodes
   
