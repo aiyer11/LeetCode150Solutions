@@ -316,4 +316,13 @@
         * Check to see if the fast pointer equals the slow pointer and if so return true (cycle detected)
         * Move the slow pointer 1 node
         * Move the fast pointer 2 nodes
+
+    * Merge K Sorted Linked Lists:
+      * Keys to solving this problem:
+        - Check edge cases: lists is null or empty
+        - Loop until the size of lists is 1
+        - Loop through each list node
+        - Merge two linked lists
+          - Check to see if the list at index i + 1 is out of bounds -> set it to null if it is
+        - Add the merged list to lists
   
