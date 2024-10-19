@@ -325,4 +325,12 @@
         - Merge two linked lists
           - Check to see if the list at index i + 1 is out of bounds -> set it to null if it is
         - Add the merged list to lists
+    
+    * Invert Binary Tree:
+      * Keys to solving this problem:
+        - Check if the root is null -> return null
+        - Create a treenode left and call the invertTree method on the root.left and set the result equal to the left variable
+        - Do the same for the right
+        - Swap the left and right values
+        - Return the root
   
