@@ -333,4 +333,30 @@
         - Do the same for the right
         - Swap the left and right values
         - Return the root
+
+    * Max Depth Of Tree:
+      * Keys to solving this problem
+        - Check base case -> if root is null return 0
+        - Return the max of maxDepth(root.left) and maxDepth(root.right) and add 1 to it
+    
+    * Same Binary Tree:
+      * Keys to solving this problem:
+        - Check base case -> If both trees are null return true
+        - If both nodes are not null and their values are the same return the traversal of left and right nodes of both trees
+        - Otherwise, return false
+    
+    * Sub Tree:
+      * Keys to solving this problem
+        - Check the base cases -> If the subtree is null return true, if the tree is null return false
+        - Check if the root and the subtree are the same tree -> return true if so
+        - Check if the left and the subtree or the right and the subtree are the same 
+        - Use the same tree function to check each portion of the tree against the subtree
+    
+    * Lowest Common Ancestor: 
+      * Keys to solving this problem:
+        - Keep track of the tree by having a pointer to start at the root of the tree
+        - Loop until the pointer reaches the last node in the tree
+        - If the left and right val are both greater than the current val move the current val to the right side of the tree
+        - If the left and right val are both less than the current val move the current val to the left side
+        - Otherwise, return the current val
   
