@@ -381,3 +381,15 @@
           - Return the value of the helper function for the left node, the left value and the root value and the helper function for the right node, the root value and the left node
         - Call the helper function on the root node, negative infinity and positive infinity 
   
+  * Kth Smallest:
+    * Keys to solving this problem:
+      - Use a stack to keep track of visited nodes
+      - Use a pointer to keep track of current node
+      - Keep a counter to for how many nodes visited
+      - Loop until the pointer is null or the stack is empty
+        - Push the current node into the stack
+        - Loop until the last node on the left side of the stack and keep pushing each node
+        - Pop the node
+        - Increment the counter
+        - If the counter is equal to k return the current node
+        - Move onto the right side of the tree
