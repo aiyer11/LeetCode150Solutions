@@ -393,3 +393,11 @@
         - Increment the counter
         - If the counter is equal to k return the current node
         - Move onto the right side of the tree
+  
+  * Binary Tree From Preorder and InOrder:
+    * Keys to solving this problem:
+      - Get the root of the tree from the first element of the preorder list
+      - Find the element in the inorder list -> mid index
+      - For the left subtree call the method with the preorder list after the first element to the mid index +1 and the inorder list before the mid point 
+      - For the right subtree call the method with the preorder list from the mid index +1 to the end of the list and the inorder list from mid + 1 to the end
+      - Return the root
