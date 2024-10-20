@@ -359,4 +359,25 @@
         - If the left and right val are both greater than the current val move the current val to the right side of the tree
         - If the left and right val are both less than the current val move the current val to the left side
         - Otherwise, return the current val
+    
+    * Level Order Traversal:
+      * Keys to solving this problem:
+        - Check the edge case -> If root is null return null
+        - Use a queue to keep track of the nodes at each level
+        - Add the root to the queue
+        - Loop until the queue is empty 
+        - Create a new list
+        - Loop until the end of the list
+          - Pop the top node from the queue and add it to the new list
+          - If the node has a left value add the left value into the queue
+          - If the node has a right value add the right value into the queue
+        - Once inside loop ends add the new list to the result list
+    
+    * Valid BST:
+      * Keys to solving this problem:
+        - Create a helper function
+          - Check to see if the root is null and if so return true
+          - Check to see if the left value is not less than the root and the right value is not greater than the root and if so return false
+          - Return the value of the helper function for the left node, the left value and the root value and the helper function for the right node, the root value and the left node
+        - Call the helper function on the root node, negative infinity and positive infinity 
   
