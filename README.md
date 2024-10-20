@@ -401,3 +401,13 @@
       - For the left subtree call the method with the preorder list after the first element to the mid index +1 and the inorder list before the mid point 
       - For the right subtree call the method with the preorder list from the mid index +1 to the end of the list and the inorder list from mid + 1 to the end
       - Return the root
+
+  * Max Path Sum:
+    * Keys to solving this problem:
+      - Create a int array to store the root value and keep track of the max values between split and non split paths
+      - Create a helper function to execute depth first search
+        - If the root is null return 0
+        - Find the max path of the left subtree without splitting and 0
+        - Do the same for the right
+        - Set the first index of the result array to the max between the current max and the root value + the max left path and the max right path -> Splitting
+        - Return the root value + the max between the left and right subtrees -> non splitting
