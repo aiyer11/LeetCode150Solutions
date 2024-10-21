@@ -397,9 +397,9 @@
   * Binary Tree From Preorder and InOrder:
     * Keys to solving this problem:
       - Get the root of the tree from the first element of the preorder list
-      - Find the element in the inorder list -> mid index
-      - For the left subtree call the method with the preorder list after the first element to the mid index +1 and the inorder list before the mid point 
-      - For the right subtree call the method with the preorder list from the mid index +1 to the end of the list and the inorder list from mid + 1 to the end
+      - Find the element in the inorder list -> mid-index
+      - For the left subtree call the method with the preorder list after the first element to the mid-index +1 and the inorder list before the mid-point 
+      - For the right subtree call the method with the preorder list from the mid-index +1 to the end of the list and the inorder list from mid + 1 to the end
       - Return the root
 
   * Max Path Sum:
@@ -410,4 +410,24 @@
         - Find the max path of the left subtree without splitting and 0
         - Do the same for the right
         - Set the first index of the result array to the max between the current max and the root value + the max left path and the max right path -> Splitting
-        - Return the root value + the max between the left and right subtrees -> non splitting
+        - Return the root value + the max between the left and right subtrees -> non-splitting
+    
+  * Serialize and Deserialize:
+    * Keys to solving this problem:
+      * Serialize:
+        - Use dfs to create the string
+          - Use a helper dfs function to take the root node and a list of strings 
+            - If the root is null add the string n to the list and return
+            - Add the root value to the list
+            - Call the helper function on the left and right nodes
+        - Return the list joined by a comma
+      
+        * Deserialize:
+          - Use dfs to deserialize the string
+            - Create a helper function that takes a string array of the node values and a int array to keep track of the current index in the list
+            - If the node value at the current index is equal to null increment the counter and return null
+            - Create a new node with the current value
+            - Set the left node to the helper function with the list and the counter
+            - Set the right node to the helper function with the list and the counter
+            - Return the node
+          - Return the helper function with the list and the counter 
